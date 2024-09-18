@@ -3,7 +3,7 @@ import random
 #import copy
 #import statusbar
 import time
-import simpleaudio as sa
+#import simpleaudio as sa
 import sys
 import os
 
@@ -27,33 +27,16 @@ print(absdirpath)
 class s():
 
     def __init__(self,filename,):
-        self.filename = str(absdirpath) + "\\audio\\" + '\\' + filename + ".wav"
-        #print(self.filename)
-        self.wave_obj = sa.WaveObject.from_wave_file(self.filename)
-        self.play_obj = self.wave_obj
+        pass
     
     def playSound(self,timer=None):
-        if timer:
-            time.sleep(timer)
-        self.play_obj = self.wave_obj.play()
-        if not timer == None:
-            time.sleep(timer)
-        else:
-            self.play_obj.wait_done()  # Wait until sound has finished playing
-
+        pass
             
     def stopSound(self):
-        if self.play_obj.is_playing():
-            self.play_obj.stop()
-            return True
-        else:
-            return False
+        pass
         
     def checkSound(self):
-        if self.play_obj.is_playing():
-            return True
-        else:
-            return False
+        pass
 
 
 class TargetAI():

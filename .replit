@@ -1,6 +1,7 @@
-run = "\"python3 P_8.py\""
+run = "python3 game.py"
+modules = ["python-3.11", "python-3.12"]
 [nix]
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "\"python3 P_8.py\""]
+run = ["sh", "-c", "python3 game.py"]
