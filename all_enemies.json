@@ -1,0 +1,103 @@
+{
+    "scenes": [
+      {
+        "scene_id": "1",
+        "enemies": [
+          {
+            "id": "goblin",
+            "base": {
+              "name": "Goblin",
+              "description": "Vile green thing",
+              "gender": "Male",
+              "max_hp": 80,
+              "max_mp": 10,
+              "strength": 10,
+              "dex": 6,
+              "intellect": 2,
+              "defence": 4,
+              "magic_defence": 2,
+              "speed": 5,
+              "lvl_stat_multiplier": 1.05,
+              "skills": ["skill_1"],
+              "exp": 30,
+              "loot": [
+                {"item_id": "item_1", "quantity": 5}
+              ]
+            }
+          },
+          {
+            "id": "forest_bandit",
+            "base": {
+              "name": "Forest Bandit",
+              "description": "A rogue lurking in the forest",
+              "gender": "Male",
+              "max_hp": 90,
+              "max_mp": 5,
+              "strength": 12,
+              "dex": 8,
+              "intellect": 4,
+              "defence": 5,
+              "magic_defence": 3,
+              "speed": 6,
+              "lvl_stat_multiplier": 1.1,
+              "skills": ["skill_1"],
+              "exp": 40,
+              "loot": [
+                {"item_id": "item_2", "quantity": 3}
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "scene_id": "2",
+        "enemies": [
+          {
+            "id": "wild_beast",
+            "base": {
+              "name": "Wild Beast",
+              "description": "A fierce creature of the wild",
+              "gender": "Neutral",
+              "max_hp": 100,
+              "max_mp": 0,
+              "strength": 15,
+              "dex": 7,
+              "intellect": 1,
+              "defence": 6,
+              "magic_defence": 1,
+              "speed": 4,
+              "lvl_stat_multiplier": 1.07,
+              "skills": ["skill_1"],
+              "exp": 50,
+              "loot": [
+                {"item_id": "item_3", "quantity": 2}
+              ]
+            }
+          },
+          {
+            "id": "forest_spirit",
+            "base": {
+              "name": "Forest Spirit",
+              "description": "A mystical entity of the forest",
+              "gender": "Female",
+              "max_hp": 70,
+              "max_mp": 20,
+              "strength": 8,
+              "dex": 6,
+              "intellect": 10,
+              "defence": 3,
+              "magic_defence": 7,
+              "speed": 5,
+              "lvl_stat_multiplier": 1.06,
+              "skills": ["skill_1"],
+              "exp": 60,
+              "loot": [
+                {"item_id": "item_4", "quantity": 1}
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

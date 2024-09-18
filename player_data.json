@@ -1,0 +1,25 @@
+{
+    "players": [
+      {
+        "name": "Leon",
+        "gender": "M",
+        "class": "Mage",
+        "suffix": "☆",
+        "starting_exp": 1000
+      },
+      {
+        "name": "Aria",
+        "gender": "F",
+        "class": "Warrior",
+        "suffix": "★",
+        "starting_exp": 1500
+      },
+      {
+        "name": "Thorne",
+        "gender": "M",
+        "class": "Paladin",
+        "suffix": "♠",
+        "starting_exp": 1200
+      }
+    ]
+  }

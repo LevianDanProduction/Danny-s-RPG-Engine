@@ -1,0 +1,112 @@
+{
+    "chapter": 1,
+    "title": "The Call of Destiny",
+    "scene_order": ["1", "2"],
+    "scenes": [
+      {
+        "scene_id": "1",
+        "location": "Village Outskirts",
+        "description": "The party gathers at the village outskirts, preparing for their journey.",
+        "characters": ["Arden", "Elara", "Borin", "Lyra"],
+        "interaction_order": ["1", "2"],
+        "interactions": {
+          "1": {
+            "type": "dialogue",
+            "content": [
+              {"character": "Arden", "expression": "serious", "text": "Alright, everyone. Before we head out, let's get to know each other."},
+              {"character": "Lyra", "expression": "calm", "text": "I'm ready when you are."}
+            ],
+            "music":"village_theme"
+          },
+          "2": {
+            "type": "exploration",
+            "prompt": "Choose a character to interact with:",
+            "choices": [
+              {
+                "option": "Talk to Elara",
+                "dialogue": [
+                  {"character": "Elara", "text": "I'm Elara, a sorceress trained in the arcane arts."}
+                ]
+              },
+              {
+                "option": "Talk to Borin",
+                "dialogue": [
+                  {"character": "Borin", "text": "I don’t like small talk. Just point me toward the enemy."}
+                ]
+              }
+            ],
+            "exit_option": "Leave the village"
+          },
+          "3": {
+            "type": "dialogue",
+            "content": [
+              {"character": "Arden", "expression": "serious", "text": "Alright, everyone. Before we head out, let's get to know each other."},
+              {"character": "Lyra", "expression": "calm", "text": "I'm ready when you are."}
+            ]
+          }
+        }
+      },
+      {
+        "scene_id": "2",
+        "location": "Forest",
+        "description": "The group explores the forest, where enemies lurk. You can stay here to grind or move on.",
+        "characters": ["Arden", "Lyra", "Borin"],
+        "interaction_order": ["1"],
+        "interactions": {
+          "1": {
+            "type": "exploration",
+            "prompt": "You are in the forest. You can choose to explore the area for more encounters or leave.",
+            "choices": [
+              {
+                "option": "Continue exploring",
+                "outcome": {
+                  "trigger_event": "random_encounter",
+                  "dialogue": [
+                    {"character": "Narrator", "text": "You hear rustling in the bushes. An enemy appears!"}
+                  ],
+                  "battle_trigger": ["forest_enemy", "wild_beast", "bandit_rogue"],
+                  "repeatable": "True",
+                  "next_prompt": {
+                    "type": "grind_loop",
+                    "prompt": "Do you want to continue exploring or leave?",
+                    "choices": [
+                      {
+                        "option": "Continue grinding",
+                        "outcome": {
+                          "trigger_event": "random_encounter",
+                          "dialogue": [
+                            {"character": "Narrator", "text": "You come across another enemy as you patrol the area. Get ready!"}
+                          ],
+                          "battle_trigger": ["forest_enemy", "wild_beast"],
+                          "repeatable": "True"
+                        }
+                      },
+                      {
+                        "option": "Leave the forest",
+                        "outcome": {
+                          "trigger_event": "leave_area",
+                          "dialogue": [
+                            {"character": "Arden", "text": "We’ve fought enough here. Time to move on."}
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "option": "Leave the forest",
+                "outcome": {
+                  "trigger_event": "leave_area",
+                  "dialogue": [
+                    {"character": "Arden", "text": "We’ve spent enough time here. Let's move on."}
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+  
