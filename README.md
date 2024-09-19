@@ -18,7 +18,7 @@ There is currently a demo game that you can play through the game, player and en
 - If you want to go back on a choice, press enter without typing anything
 - For best presentation, go fullscreen
 
-If youre feeling brave, feel free to **edit the json files** as you please to play around with the different aspects
+If youre feeling brave, feel free to **edit the json files** or even the **P_8.py file** as you please to play around with the different aspects
 
 ### Warning
 
