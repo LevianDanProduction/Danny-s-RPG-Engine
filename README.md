@@ -13,6 +13,7 @@ There is currently a demo game that you can play through the game, player and en
 
 ## Tips on how to play
 - When it says press anywhere press enter
+- when the game presents you with numbered options, type the number that matches with your desired choice
 - The keys you need for battling is the numberpad/numbers, backspace and enter on your keyboard
 - If you want to go back on a choice, press enter without typing anything
 - For best presentation, go fullscreen
