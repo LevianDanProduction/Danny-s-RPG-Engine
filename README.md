@@ -6,7 +6,7 @@ Not much documentation has been made since its revival, but will at one point en
 ## How to run
 There is currently a demo game that you can play through the game, player and enemy json data files that contain all the characters, story dialogue and actions the player can take
 
-#### In order to run it, yo will need to:
+**In order to run it, yo will need to:**
 - Open up any IDE ensuring there is a working terminal
 - Ensure that you have the simpleaudio module installed
 - Run the game.py file
@@ -17,6 +17,8 @@ There is currently a demo game that you can play through the game, player and en
 - The keys you need for battling is the numberpad/numbers, backspace and enter on your keyboard
 - If you want to go back on a choice, press enter without typing anything
 - For best presentation, go fullscreen
+
+If youre feeling brave, feel free to **edit the json files** as you please to play around with the different aspects
 
 ### Warning
 
