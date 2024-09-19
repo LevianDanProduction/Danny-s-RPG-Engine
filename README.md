@@ -7,7 +7,7 @@ Not much documentation has been made since its revival, but will at one point en
 There is currently a demo game that you can play through the game, player and enemy json data files that contain all the characters, story dialogue and actions the player can take
 
 #### In order to run it, yo will need to:
-- Open up any IDE ensuring there is a clear terminal
+- Open up any IDE ensuring there is a working terminal
 - Ensure that you have the simpleaudio module installed
 - Run the game.py file
 
